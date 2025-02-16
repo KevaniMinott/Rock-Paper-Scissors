@@ -82,15 +82,15 @@
 
   <!-- Game buttons -->
   <button onclick="playGame('rock');" class="move-button">
-    <img class="move-icon" src="rock-emoji.png">
+    <img class="move-icon" src="images/rock-emoji.png">
   </button>
 
   <button onclick="playGame('paper');" class="move-button">
-    <img class="move-icon" src="paper-emoji.png">
+    <img class="move-icon" src="images/paper-emoji.png">
   </button>
 
   <button onclick="playGame('scissors');" class="move-button">
-    <img class="move-icon" src="scissors-emoji.png">
+    <img class="move-icon" src="images/scissors-emoji.png">
   </button>
 
   <p class="js-result result"></p>
@@ -124,8 +124,8 @@
       score.ties += result === 'Tie.' ? 1 : 0;
 
       document.querySelector('.js-moves').innerHTML = `
-        You <img class="move-icon" src="${playerMove}-emoji.png">
-        <img class="move-icon" src="${computerMove}-emoji.png"> Computer
+        You <img class="move-icon" src="images/${playerMove}-emoji.png">
+        <img class="move-icon" src="images/${computerMove}-emoji.png"> Computer
       `;
 
       document.querySelector('.js-result').innerHTML = result;
